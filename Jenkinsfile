@@ -4,6 +4,11 @@ pipeline {
   environment {
     BRANCH_NAME = "${env.BRANCH_NAME}"
   }
+
+  triggers {
+        cron('H/2 * * * *')
+  }
+
   stages {
 
     stage('Checkout code'){
