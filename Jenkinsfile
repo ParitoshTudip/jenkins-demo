@@ -1,11 +1,14 @@
 pipeline {
   agent any
 
+  environment {
+    BRANCH_NAME = "${env.BRANCH_NAME}"
+  }
   stages {
 
     stage('Checkout code'){
       steps {
-        echo "Code checked out by Jenkins SCM"
+        echo "Application running for branch: ${BRANCH_NAME}"
       }
     }
 
