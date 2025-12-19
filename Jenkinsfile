@@ -5,8 +5,7 @@ pipeline {
 
     stage('Checkout code'){
       steps {
-        get branch: 'main',
-        url: 'https://github.com/ParitoshTudip/jenkins-demo.git'
+        echo "Code checked out by Jenkins SCM"
       }
     }
 
