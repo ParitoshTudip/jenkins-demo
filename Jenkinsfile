@@ -8,7 +8,7 @@ pipeline {
 
     stage('Checkout code'){
       steps {
-        echo "Runnig pipeline for branch: ${BRANCH_NAME}"
+        echo "Runnig pipeline for branch:: ${BRANCH_NAME}"
       }
     }
 
